@@ -18,6 +18,7 @@
 		9D75E0FD2ECF5F03007996A7 /* fetch_dobby.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = fetch_dobby.sh; sourceTree = "<group>"; };
 		9D75E0FF2ECF5F3C007996A7 /* libdobby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdobby.a; sourceTree = "<group>"; };
 		9D75E1022ECF5FA7007996A7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		9D75E1042ECF603A007996A7 /* package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				9D75E0FD2ECF5F03007996A7 /* fetch_dobby.sh */,
+				9D75E1042ECF603A007996A7 /* package.sh */,
 				9D44A5C02ECF5D1D00F12F23 /* tweak.c */,
 				9D75E0FE2ECF5F3C007996A7 /* Frameworks */,
 				9D44A5BA2ECF5D1400F12F23 /* Products */,

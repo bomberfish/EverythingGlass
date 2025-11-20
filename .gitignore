@@ -1,3 +1,4 @@
+*.pkg
 build/
 libdobby.a
 dobby.h
