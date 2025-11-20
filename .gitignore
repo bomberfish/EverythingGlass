@@ -1,0 +1,4 @@
+build/
+libdobby.a
+dobby.h
+*.swp
