@@ -6,6 +6,8 @@
 //
 
 #include <CoreFoundation/CoreFoundation.h>
+#include <objc/objc-runtime.h>
+
 #include "dobby.h"
 
 Boolean (*_os_feature_enabled_old)(const char *domain, const char *feature);
@@ -21,7 +23,20 @@ Boolean _os_feature_enabled_new(const char *domain, const char *feature) {
     return result;
 }
 
+Boolean (*AlertGlassSolariumEnabledOld)();
+Boolean AlertGlassSolariumEnabledNew() {
+    return false;
+}
+
 __attribute__((constructor)) void InitTweak(void) {
+    DobbyHook(DobbySymbolResolver(NULL, "_NSAlertGlassSolariumEnabled"),
+              AlertGlassSolariumEnabledNew,
+              &AlertGlassSolariumEnabledOld);
+    
+    if (strstr(getprogname(), "Dock") != NULL) {
+        return;
+    }
+    
     DobbyHook(DobbySymbolResolver(NULL, "_os_feature_enabled_impl"),
               _os_feature_enabled_new,
               &_os_feature_enabled_old);

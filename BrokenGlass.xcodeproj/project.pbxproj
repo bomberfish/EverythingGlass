@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9D75E1002ECF5F3C007996A7 /* libdobby.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D75E0FF2ECF5F3C007996A7 /* libdobby.a */; };
-		9D75E1012ECF5F8A007996A7 /* tweak.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D44A5C02ECF5D1D00F12F23 /* tweak.c */; };
+		9D75E1012ECF5F8A007996A7 /* tweak.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D44A5C02ECF5D1D00F12F23 /* tweak.m */; };
 		9D75E1032ECF5FA7007996A7 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D75E1022ECF5FA7007996A7 /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D44A5B92ECF5D1400F12F23 /* libBrokenGlass.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libBrokenGlass.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D44A5C02ECF5D1D00F12F23 /* tweak.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tweak.c; sourceTree = "<group>"; };
+		9D44A5C02ECF5D1D00F12F23 /* tweak.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tweak.m; sourceTree = "<group>"; };
 		9D75E0FD2ECF5F03007996A7 /* fetch_dobby.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = fetch_dobby.sh; sourceTree = "<group>"; };
 		9D75E0FF2ECF5F3C007996A7 /* libdobby.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdobby.a; sourceTree = "<group>"; };
 		9D75E1022ECF5FA7007996A7 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -39,7 +39,7 @@
 			children = (
 				9D75E0FD2ECF5F03007996A7 /* fetch_dobby.sh */,
 				9D75E1042ECF603A007996A7 /* package.sh */,
-				9D44A5C02ECF5D1D00F12F23 /* tweak.c */,
+				9D44A5C02ECF5D1D00F12F23 /* tweak.m */,
 				9D75E0FE2ECF5F3C007996A7 /* Frameworks */,
 				9D44A5BA2ECF5D1400F12F23 /* Products */,
 			);
@@ -132,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D75E1012ECF5F8A007996A7 /* tweak.c in Sources */,
+				9D75E1012ECF5F8A007996A7 /* tweak.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
