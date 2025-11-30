@@ -16,7 +16,7 @@ Boolean _os_feature_enabled_new(const char *domain, const char *feature) {
     if (domain && feature) {
          if (strcmp(domain, "SwiftUI") == 0 &&
              strcmp(feature, "Solarium") == 0) {
-             return false;
+             return true;
          }
     }
     
@@ -25,7 +25,7 @@ Boolean _os_feature_enabled_new(const char *domain, const char *feature) {
 
 Boolean (*AlertGlassSolariumEnabledOld)();
 Boolean AlertGlassSolariumEnabledNew() {
-    return false;
+    return true;
 }
 
 __attribute__((constructor)) void InitTweak(void) {
